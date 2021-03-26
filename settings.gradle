@@ -1,0 +1,3 @@
+include ':CounterAnimationTextView'
+include ':app'
+rootProject.name = "CounterAnimationTextView"
