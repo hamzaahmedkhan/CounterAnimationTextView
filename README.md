@@ -40,7 +40,7 @@ Add the dependency to your build.gradle.
 
 ```
 dependencies {
-    implementation 'com.github.hamzaahmedkhan:CountAnimationTextView:1.0.0'
+	implementation 'com.github.hamzaahmedkhan:CounterAnimationTextView:1.0.1'
 }
 ```
 
