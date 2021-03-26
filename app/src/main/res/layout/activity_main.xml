@@ -132,11 +132,16 @@
                 android:textSize="20sp" />
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="4dp"
+            android:background="#999"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="10dp"
             android:gravity="center_vertical"
             android:paddingTop="10dp"
             android:paddingBottom="10dp">
@@ -175,19 +180,70 @@
             android:id="@+id/seekbarAnimationDuration"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:max="3000"
+            android:max="5000"
             android:min="100"
             android:paddingTop="5dp"
             android:paddingBottom="5dp" />
-
 
         <Button
             android:id="@+id/btnStartAnimation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
             android:layout_gravity="center_horizontal"
-            android:text="START ANIMATION"/>
+            android:text="START ANIMATION" />
+
+        <RadioGroup
+            android:id="@+id/rgInterpolator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <RadioButton
+                android:id="@+id/rbNone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="None" />
+
+            <RadioButton
+                android:id="@+id/rbOvershoot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overshoot Interpolator" />
+
+            <RadioButton
+                android:id="@+id/rbFastOutSlowIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fast out slow in Interpolator" />
+
+            <RadioButton
+                android:id="@+id/rbAccelerate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accelerate Interpolator" />
+
+
+            <RadioButton
+                android:id="@+id/rbDecelerate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Decelerate Interpolator" />
+
+
+            <RadioButton
+                android:id="@+id/rbAccelerateDecelerate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accelerate Decelerate Interpolator" />
+
+        </RadioGroup>
+
+
 
 
     </LinearLayout>
